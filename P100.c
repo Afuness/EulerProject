@@ -22,3 +22,15 @@ int Even_Fibonacci_numbers(){
     if(a % 2 == 0) sum += a;
     return sum;
 }
+
+int Largest_prime_factor()
+{
+	long long prime = 600851475143;
+	int i = 2;
+	for (; i <= prime; )
+	{
+		if (prime % i == 0)  prime /= i;
+		else  ++i;
+	}
+	return i;
+}

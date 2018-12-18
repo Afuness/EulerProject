@@ -22,8 +22,12 @@ int Multiples_of_3_and_5(int target);
     By considering the terms in the Fibonacci sequence whose values do not exceed four million, 
     find the sum of the even-valued terms.
 */
-int Even_Fibonacci_numbers(){
-    int a = 1,b = 2,sum,temp;
-    for(; sum += a,temp = a,a = b, b += temp; b < 4000000);
-    return sum;
-}
+int Even_Fibonacci_numbers();
+
+/*  
+ ************************* 3.Largest prime factor ***************************
+    The prime factors of 13195 are 5, 7, 13 and 29.
+
+    What is the largest prime factor of the number 600851475143 ?
+*/
+int Largest_prime_factor();
