@@ -34,3 +34,46 @@ int Largest_prime_factor()
 	}
 	return i;
 }
+
+int Largest_palindrome_product()
+{
+	int max = 0;
+	for (int i = 999 ; i > 0 ; i--)
+	{
+		for (int j = 999; j > 0; j--)
+		{
+			int num = i * j;
+			if (Is_palindromic( num ))
+			{
+				max = Maxnum(max,num);
+			}
+		}
+	}
+	return max;
+}
+
+int Maxnum(int a,int b)
+{
+	if(a>b) return a;
+	else return b;
+}
+
+int Is_palindromic( int num )
+{
+	assert(num>0);
+	int div = 1;
+	while (num/div >= 10)
+	{
+		div *= 10;
+	}
+	while (num)
+	{
+		if (num / div == num % 10)
+		{
+			num = (num % div) / 10; 
+			div /= 100;
+		}
+		else return 0;
+	}
+	return 1;
+}

@@ -24,6 +24,7 @@ int Multiples_of_3_and_5(int target);
 */
 int Even_Fibonacci_numbers();
 
+
 /*  
  ************************* 3.Largest prime factor ***************************
     The prime factors of 13195 are 5, 7, 13 and 29.
@@ -31,3 +32,13 @@ int Even_Fibonacci_numbers();
     What is the largest prime factor of the number 600851475143 ?
 */
 int Largest_prime_factor();
+
+
+/* 
+ ************************ 4.Largest palindrome product********************************
+    A palindromic number reads the same both ways. The largest palindrome made from the product of 
+    two 2-digit numbers is 9009 = 91 × 99.
+
+    Find the largest palindrome made from the product of two 3-digit numbers.
+*/
+int Largest_palindrome_product();
