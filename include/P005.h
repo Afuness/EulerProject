@@ -1,4 +1,4 @@
-// The method declares of problem from 1 - 100.
+// The method declares of problem from 001 - 005.
 
 
 #include "stdlib.h"
@@ -37,7 +37,7 @@ int Largest_prime_factor();
 /* 
  ************************ 4.Largest palindrome product ********************************
     A palindromic number reads the same both ways. The largest palindrome made from the product of 
-    two 2-digit numbers is 9009 = 91 × 99.
+    two 2-digit numbers is 9009 = 91 Ã— 99.
 
     Find the largest palindrome made from the product of two 3-digit numbers.
 */
@@ -52,5 +52,8 @@ int Largest_palindrome_product();
  What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 */
 int Smallest_multiple();
+
+
+
 
 
