@@ -204,3 +204,24 @@ int Special_Pythagorean_triplet()
 	}
 	return 0;
 }
+
+int Summation_of_primes()
+{
+	int sum = 5;
+	int i;
+	int max = 2000000;
+	for (i = 5; i <= max; )
+	{
+		if (Is_prime( i ))
+		{
+			sum += i;
+		}
+		i += 2;
+		if (( i<= max ) && Is_prime( i ))
+		{
+			sum += i;
+		}
+		i += 4;
+	}
+	return sum;
+}
