@@ -1,3 +1,5 @@
+#include "P015.h"
+
 int Large_sum()
 {
 	char nums[100][50]= 
