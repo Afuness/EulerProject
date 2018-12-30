@@ -5,13 +5,13 @@
 // 所有的序列数都可以用小于它的序列数来表示
 
 // TO: 解决超大数组溢出问题
+int cache[1000001] = {0};
 
 long Longest_Collatz_sequence()
 {
 	int sequenceLength = 0;
 	long startinfNumber = 0;
 	long sequence;
-	int cache[1000001] = {0};
 	//超大数组溢出
 	cache[1] = 1;
 
